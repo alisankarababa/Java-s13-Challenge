@@ -69,6 +69,11 @@ public class Employee {
             return;
         }
 
+        if(null != name && Arrays.asList(healthplans).contains(name)) {
+            System.out.println("healthplan already contains: " + name);
+            return;
+        }
+
         healthplans[index] = name;
 
     }
