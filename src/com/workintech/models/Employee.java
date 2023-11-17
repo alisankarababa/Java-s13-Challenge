@@ -1,7 +1,6 @@
 package com.workintech.models;
 
 import java.util.Arrays;
-import java.util.SimpleTimeZone;
 
 public class Employee {
 
@@ -58,7 +57,7 @@ public class Employee {
 
     public void addHealthPlan(int index, String name) {
 
-        if(index > healthplans.length - 1 ) {
+        if(index < 0 || index > healthplans.length - 1 ) {
 
             System.out.println("addHealthPlan: index out of bounds");
             return;
